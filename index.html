@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -25,18 +26,20 @@
     <h1>
        <div> <span class="icon" id="icon">☀️</span></div>
        <br/>
-       <span class="value" id="value">24</span><span class="celsius">°C</span>
+       <span class="value" id="temperature">24</span><span class="celsius">°C</span>
     </h1>
     <br/>
     <div>
     <h2> Pretoria </h2> 
     <p>
-        Tuesday 14:26 , clear sky <br/>
-        Humidity :<span class="humidity" id="humidity"> 42% </span>, Wind : <span class="wind" id="wind">2.5 </span>km/h
+        <span id="day"></span> <span id="time"></span> ,<span id="description"></span>  <br/>
+        Humidity :<span class="humidity" id="humidity"> </span>% , Wind : <span class="wind" id="wind"> </span>km/h
     </p>
     </div>
     <hr/>
+    
     </section>
+     <script src="src/app.js"></script>
 </body>
 
 </html>

@@ -64,8 +64,9 @@ p {
   font-weight: bold;
 }
 .celsius {
- font-size: 30px;
-  line-height: 30px;
+ 
+   margin-top: 6px;
+  font-size: 28px; 
   
 }
 div {
