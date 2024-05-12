@@ -5,7 +5,7 @@ body {
 section {
   display: flex;
   background: #b6cdbd;
-  max-width: 700px;
+  max-width: 500px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
