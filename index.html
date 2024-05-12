@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Forecast App</title>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +12,11 @@
 </head>
 <body>
     <section>
-    <footer> 
-        This project was coded by <a href="https://github.com/shecodi" target="_blank">God'swill  Kutwane</a>, is open-source on <a href="https://github.com/shecodi/Weather-homework-app" target="_blank">Github</a> and hosted on <a href="https://brilliant-conkies-462883.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+        <div class="design-forecast">
+   <h1>
+        Weather Forecast App
+    </h1>
+    <br/>
     <hr/>
     <form>
 
@@ -23,21 +25,30 @@
 
     </form>
     <br/>
-    <h1>
-       <div> <span class="icon" id="icon"></span></div>
-       <br/>
-       <span class="value" id="temperature"> </span><span class="celsius">°C</span>
-    </h1>
-    <br/>
-    <div>
-    <h2> Pretoria </h2> 
-    <p>
+    
+        <div class="city-icon"> 
+            <h2> Pretoria </h2> 
+              <div class="icon" id="icon"></div>
+           </div>
+     <br/>
+     <div class="temp-details" id="temp-details">
+       <span class="value" id="temperature"></span><span class="celsius">°C</span>
+     
+     <p>
         <span id="day"></span> <span id="time"></span> ,<span id="description"></span>  <br/>
         Humidity :<span class="humidity" id="humidity"> </span>, Wind : <span class="wind" id="wind"> </span>
-    </p>
-    </div>
-    <hr/>
-    
+     </p>
+     </div>
+<hr/>
+<br/>
+<br/>
+     <footer> 
+        This project was coded by <a href="https://github.com/shecodi" target="_blank">God'swill  Kutwane</a>, is open-source on <a href="https://github.com/shecodi/Weather-homework-app" target="_blank">Github</a> and hosted on <a href="https://brilliant-conkies-462883.netlify.app/" target="_blank">Netlify</a>
+    </footer>
+    <br/>
+     </div>
+        <div class="weather-forecast" id="forecast" ></div>
+
     </section>
      <script src="src/app.js"></script>
 </body>
