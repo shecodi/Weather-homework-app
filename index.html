@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast App</title>
     <meta name="description" content="The app helps you get the current and four days ahead weather-forecast . ">
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
@@ -17,41 +15,103 @@
    <h1>
         Weather Forecast App
     </h1>
-    <br/>
-    <hr/>
+    <br>
+    <hr>
     <form>
 
-        <input type="text" placeholder="Enter city" required class="text-input" id="text-input"/>
-<input type="submit" value="Search" class="search-button" id="search-button"/>
+        <input type="text" placeholder="Enter city" required="" class="text-input" id="text-input">
+<input type="submit" value="Search" class="search-button" id="search-button">
 
     </form>
-    <br/>
+    <br>
     
         <div class="city-icon"> 
-            <h2> Pretoria </h2> 
-              <div class="icon" id="icon"></div>
+            <h2>New York County</h2> 
+              <div class="icon" id="icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-app-icon"></div>
            </div>
-     <br/>
+     
      <div class="temp-details" id="temp-details">
-       <span class="value" id="temperature"></span><span class="celsius">°C</span>
+       <span class="value" id="temperature">27</span><span class="celsius">°C</span>
      
      <p>
-        <span id="day"></span> <span id="time"></span> ,<span id="description"></span>  <br/>
-        Humidity :<span class="humidity" id="humidity"> </span>, Wind : <span class="wind" id="wind"> </span>
+        <span id="day"></span> <span id="time">Friday 23:54</span> ,<span id="description">clear sky</span>  <br>
+        Humidity :<span class="humidity" id="humidity">64%</span>, Wind : <span class="wind" id="wind">4.63km/h</span>
      </p>
      </div>
 
-<br/>
-<br/>
+<br>
+<br>
      <footer> 
-        This project was coded by <a href="mailto:gkutwane7@gmail.com" title="email"  target="_blank">God'swill  Kutwane</a>, is open-source on <a href="https://github.com/shecodi/Weather-homework-app"  title="github" target="_blank">Github</a> and hosted on <a href="https://brilliant-conkies-462883.netlify.app/"  title="netlify" target="_blank">Netlify</a>
+        This project was coded by <a href="mailto:gkutwane7@gmail.com" title="email" target="_blank">God'swill  Kutwane</a>, is open-source on <a href="https://github.com/shecodi/Weather-homework-app" title="github" target="_blank">Github</a> and hosted on <a href="https://brilliant-conkies-462883.netlify.app/" title="netlify" target="_blank">Netlify</a>
     </footer>
-    <br/>
+   
      </div>
-        <div class="weather-forecast" id="forecast" ></div>
-
+        <div class="weather-forecast" id="forecast">
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date"><strong class="day">Fri</strong>
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures">
+            
+        </div>
+        
+        <span class="maximum">
+            <strong>31º</strong>
+          </span>
+          <span class="minimum">19º
+            </span>
+            
+       </div>
+      </div>
+<hr>
+    
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date"><strong class="day">Sat</strong>
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures"></div>
+        
+        <span class="maximum">
+            <strong>28º</strong>
+          </span>
+          <span class="minimum">19º
+            </span>
+            
+       </div>
+      </div>
+<hr>
+    
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date"><strong class="day">Sun</strong>
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures"></div>
+        
+        <span class="maximum">
+            <strong>24º</strong>
+          </span>
+          <span class="minimum">17º
+            </span>
+            
+       </div>
+      </div>
+<hr>
+    <div class="forecast-line">
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date"><strong class="day">Mon</strong>
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
+        <div class="weather-forecast-temperatures"></div>
+        
+        <span class="maximum">
+            <strong>29º</strong>
+          </span>
+          <span class="minimum">19º
+            </span>
+            
+       </div>
+      </div>
+<hr>
+    </div>
+</div>
     </section>
      <script src="src/app.js"></script>
-</body>
 
-</html>
+
+</body></html>
