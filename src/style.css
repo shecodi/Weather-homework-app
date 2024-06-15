@@ -137,8 +137,8 @@ footer {
 @media(mix-width :600px) {
 
  h2 {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 10px;
+  line-height: 20px;
   font-weight: bold; 
  }
 p {
