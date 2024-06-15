@@ -136,6 +136,23 @@ footer {
 
 @media (mix-width :450px) {
 
+  .search-button {
+  background: #295f4e;
+  padding: 5px 10px;
+  border: none;
+  font-size: 8px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
+}
+ .text-input {
+  background-color: #bae5d5;
+  border: none;
+  border-radius: 6px;
+  width: 50%;
+  font-size: 15px;
+  padding: 15px 15px;
+} 
  h2 {
   font-size: 5px;
   line-height: 10x;
