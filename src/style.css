@@ -134,16 +134,20 @@ footer {
   color: #698474;
 }
 
-@media(mix-width :600px) {
+@media (mix-width :450px) {
 
  h2 {
-  font-size: 10px;
-  line-height: 20px;
-  font-weight: bold; 
+  font-size: 5px;
+  line-height: 10x;
+  font-weight: light;
  }
+ .icon {
+  width: 40px;
+  font-weight: normal;
+}
 p {
   color: #5c715e;
-  font-size: 10px;
+  font-size: 7px;
 }
 section {
   display: flex;
