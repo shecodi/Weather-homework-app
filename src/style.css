@@ -3,19 +3,19 @@ body {
   font-family: "Oswald", sans-serif;
 }
 section {
-  display: flex;
+  
   background: #b6cdbd;
   max-width: 500px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
-  padding: 30px;
+  padding: 10px;
 }
 .design-forecast {
   background-color: #97cba9;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
-  padding: 5px 30px;
+  padding: 15px 30px;
   margin: 0 60px;
 }
 
@@ -43,18 +43,23 @@ form {
   display: flex;
 }
 h1 {
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
   color: #295f4e;
   margin: 0;
+  margin-top: 10px;
+  
 }
 
 
 .temp-details {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  text-align: center;
 }
 h2 {
-  font-size: 25px;
+  font-size: 30px;
   line-height: 40px;
   font-weight: bold;
 }
@@ -72,7 +77,7 @@ p {
   font-weight: bold;
 }
 .value {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 70px;
   font-weight: bold;
 }
@@ -96,7 +101,12 @@ p {
 
 .weatehr-app-unit {
   margin-top: 6px;
-  font-size: 28px;
+  font-size: 20px;
+}
+
+.weather-forecast {
+  display: flex;
+  margin-left: 20px;
 }
 
 .weather-forecast-date {
@@ -110,13 +120,11 @@ p {
   color: #295f4e;
 }
 .weather-forecast-icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
-.weather-forecast {
-  padding: 5px 10px;
-}
+
 footer {
   margin: bottom-space;
   border-top: 1px solid #698474;
@@ -127,11 +135,12 @@ footer {
 }
 
 @media(mix-width :600px) {
-  h2 {
+
+ h2 {
   font-size: 15px;
-  line-height: 30px;
-  font-weight: bold;
-}
+  line-height: 25px;
+  font-weight: bold; 
+ }
 p {
   color: #5c715e;
   font-size: 10px;
@@ -139,7 +148,7 @@ p {
 section {
   display: flex;
   justify-content: left;
-  background: #b6cdbd;
+  background:#d65a31 ;
   max-width: 500px;
   margin: 5px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -157,11 +166,7 @@ section {
 
   font-weight: bold;
 }
-.value {
-  font-size: 25px;
-  line-height: 50px;
-  font-weight: bold;
-}
+
 .celsius {
   margin-top: 6px;
   margin-right: 10px;

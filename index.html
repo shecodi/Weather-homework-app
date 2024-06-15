@@ -6,16 +6,17 @@
     <meta name="description" content="The app helps you get the current and four days ahead weather-forecast . ">
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="src/style.css">
+ <link rel="stylesheet" href="src/style.css">
 </head>
-<body>
-    <section>
-        <div class="design-forecast">
+<body class="active" >
+    <section  >
+        <div class="design-forecast p-20">
    <h1>
         Weather Forecast App
     </h1>
-    <br>
+    
     <hr>
     <form>
 
@@ -39,19 +40,16 @@
      </p>
      </div>
 
-<br>
-<br>
-     <footer> 
-        This project was coded by <a href="mailto:gkutwane7@gmail.com" title="email" target="_blank">God'swill  Kutwane</a>, is open-source on <a href="https://github.com/shecodi/Weather-homework-app" title="github" target="_blank">Github</a> and hosted on <a href="https://brilliant-conkies-462883.netlify.app/" title="netlify" target="_blank">Netlify</a>
-    </footer>
+
    
      </div>
-        <div class="weather-forecast" id="forecast">
+
+ <div class="weather-forecast" id="forecast">
       <div class="weather-forecast-day">
         <div class="weather-forecast-date"><strong class="day">Fri</strong>
         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
         <div class="weather-forecast-temperatures">
-            
+
         </div>
         
         <span class="maximum">
@@ -62,56 +60,18 @@
             
        </div>
       </div>
+       
 <hr>
     
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date"><strong class="day">Sat</strong>
-        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures"></div>
-        
-        <span class="maximum">
-            <strong>28º</strong>
-          </span>
-          <span class="minimum">19º
-            </span>
-            
-       </div>
-      </div>
-<hr>
-    
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date"><strong class="day">Sun</strong>
-        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures"></div>
-        
-        <span class="maximum">
-            <strong>24º</strong>
-          </span>
-          <span class="minimum">17º
-            </span>
-            
-       </div>
-      </div>
-<hr>
-    <div class="forecast-line">
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date"><strong class="day">Mon</strong>
-        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures"></div>
-        
-        <span class="maximum">
-            <strong>29º</strong>
-          </span>
-          <span class="minimum">19º
-            </span>
-            
-       </div>
-      </div>
-<hr>
+     
     </div>
 </div>
-    </section>
+     <footer> 
+        This project was coded by <a href="mailto:gkutwane7@gmail.com" title="email" target="_blank">God'swill  Kutwane</a>, is open-source on <a href="https://github.com/shecodi/Weather-homework-app" title="github" target="_blank">Github</a> and hosted on <a href="https://brilliant-conkies-462883.netlify.app/" title="netlify" target="_blank">Netlify</a>
+    </footer>
+    
      <script src="src/app.js"></script>
 
-
-</body></html>
+ </section>
+</body>
+</html>
