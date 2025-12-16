@@ -77,7 +77,7 @@ function displayForecast(response) {
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
-    if (index < 4) {
+    if (index < 5) {
       forecastHtml =
         forecastHtml +
         `
@@ -88,7 +88,7 @@ function displayForecast(response) {
         
         <span class="maximum">
             <strong>${Math.round(day.temperature.maximum)}º</strong>
-          </span>
+          </span>/
           <span class="minimum">${Math.round(day.temperature.minimum )}º
             </span>
             

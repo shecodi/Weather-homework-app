@@ -1,50 +1,64 @@
 body {
-  background-color: #698474;
+  background-color: #917314a4;
+  background-image: url(/images/blue-gold.avif);
   font-family: "Oswald", sans-serif;
   
 }
+
 section {
-  position:center;
-  background: #b6cdbd;
+  position:relative;
+  background-color: #573e12;
   max-width: 900px;
-margin: 60px auto;
-  box-shadow: 0 30px 50px rgba(164, 157, 180, 0.08);
+margin: 50px auto;
   border-radius: 16px;
-  padding: 30px;
+  padding: 0.5rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height:50%;
- width: 100vw;
+  height:100%;
+ width: 100%;
 }
+
+
+
 .design-forecast {
-  background-color: #97cba9;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+ 
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
   border-radius: 16px;
-  padding: 50px 30px;
+  padding: 1rem;
   margin: 0;
-  
+  width: 100%;
 }
 
-p , .temp-details {
+ .temp-details {
 
- display: flex;
+display: flex;
+  justify-content: center;
+  gap: 10px;
  
 }
 
-p {
+.infor {
 
-  color: #5c715e;
+  color: #dabd88;
   font-size: 15px;
-  margin-left: 50px;
+  
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 a {
-  color: #d65a31;
+  color: #c7b0a9;
+   font-size: clamp(10px, 2vw, 13px);
 }
 .search-button {
-  background: #295f4e;
+  background: #866836;
   padding: 15px 20px;
   border: none;
   font-size: 16px;
@@ -52,8 +66,13 @@ a {
   border-radius: 6px;
   color: white;
 }
+.search-button:hover {
+ background:  #ad9b5f;
+   color: #573e12 ;
+}
+
 .text-input {
-  background-color: #bae5d5;
+  background-color: #f0d5a3;
   border: none;
   border-radius: 6px;
   width: 80%;
@@ -65,54 +84,57 @@ form {
 }
 h1 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
-  color: #295f4e;
-  margin: 0;
-  margin-top: 10px;
-  
+  color: #e2d4a6;
+ 
 }
 
 
 .temp-details {
+   font-size: clamp(30px, 6vw, 50px);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
+  gap: 30px;
 }
 h2 {
-  font-size: 50px;
+   font-size: clamp(24px, 6vw, 50px);
   line-height: 40px;
   font-weight: bold;
+  color: #dabd88;
 }
 
 .city-icon {
-  display: flex;
-  justify-content: space-around;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
+
 .icon {
   width: 90px;
-
   font-weight: bold;
 }
+
 .value {
-  font-size: 40px;
+  font-size: clamp(30px, 6vw, 50px);
   line-height: 70px;
   font-weight: bold;
- 
+ color: #dabd88;
 }
 .celsius {
   margin-top: 6px;
-  font-size: 14px;
-
-  
+ font-size: clamp(20px, 6vw, 10px);
+  color: #dabd88;
 }
 
 
 .humidity {
-  color: #d65a31;
+  color: #dd930a;
 }
 .wind {
-  color: #d65a31;
+ color: #dd930a;
 }
 .weather-app-temperature {
   font-size: 40px;
@@ -126,36 +148,57 @@ h2 {
 }
 
 .weather-forecast {
-  display: flex;
-  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 5px; 
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
 }
+
 
 .weather-forecast-date {
-  color:#d65a31 ;
-  font-size: 13px;
-  line-height: 20px;
+  color:#f3ece9 ;
+  font-size: 9px;
+  line-height: 10px;
   margin-bottom: 10px;
+  background-color: rgba(9, 4, 80, 0.979);
+  padding: 1rem;
+  border-radius: 10px;
 }
 .day {
-  font-size: 17px;
-  color: #295f4e;
+  font-size: 20px;
+  color: #b18431;
 }
 .weather-forecast-icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
+hr {
+ background-color: #b18431 ;
+}
 
 footer {
   margin: bottom-space;
   border-top: 1px solid #698474;
   padding: 10px 0 0 0;
   text-align: center;
-  font-size: 10px;
-  color: #698474;
+   font-size: clamp(10px, 2vw, 13px);
+  color: #a4a3a891;
 }
 
 @media (max-width :600px)  {
+
+  form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .text-input,
+  .search-button {
+    width: 100%;
+  }
 
   .design-forecast {
   
@@ -268,11 +311,7 @@ footer {
 
 @media (max-width:300px) {
 
-p , .temp-details {
 
- display: inline;
- 
-}
 
  .value {
   font-size: 30px;
