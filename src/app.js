@@ -88,7 +88,7 @@ function displayForecast(response) {
         
         <span class="maximum">
             <strong>${Math.round(day.temperature.maximum)}º</strong>
-          </span>/
+          </span>
           <span class="minimum">${Math.round(day.temperature.minimum )}º
             </span>
             
