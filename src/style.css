@@ -15,10 +15,11 @@ padding: 2rem;
 
 section {
  background-color: #573e12;
-  max-width: 900px;
+  max-width: 600px;
   width: 100%;          
-  padding: 1rem;
+  padding:1rem;
   border-radius: 16px;
+  
 }
 
 
@@ -52,18 +53,22 @@ display: flex;
   gap: 30px;
 }
 
-a {
-  color: #c7b0a9;
-   font-size: clamp(10px, 2vw, 13px);
+
+.input {
+display: block;
+margin: 0 auto;
 }
+
 .search-button {
-  background: #866836;
-  padding: 15px 20px;
+  background:rgba(9, 4, 80, 0.979) ;
+  padding: clamp(15px, 1vw, 15px);
   border: none;
-  font-size: 16px;
+   font-size: clamp(7px, 2vw, 17px);
   margin-left: 5px;
   border-radius: 6px;
-  color: white;
+  color: #dd930a;
+  width: 100%;
+  max-width: clamp(80px, 50vw, 100px);
 }
 .search-button:hover {
  background:  #ad9b5f;
@@ -75,15 +80,18 @@ a {
   border: none;
   border-radius: 6px;
   width: 80%;
-  font-size: 17px;
-  padding: 15px 15px;
+  font-size:clamp(10px, 2vw, 17px) ;
+  padding:clamp(13px, 1vw, 100px);
+  width: 100%;
+  max-width: clamp(300px, 100vw, 800px);
 }
 
 form {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax( 1fr));
+  grid-auto-flow: column;   
+  gap: clamp(2px, 1vw, 3px);
+ align-items: center;
 }
 
 .temp-wrapper {
@@ -153,9 +161,9 @@ h2 {
 
 .weather-forecast {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax( 1fr));
   grid-auto-flow: column;   
-  gap: clamp(3px, 1vw, 12px);
+  gap: clamp(3px, 1vw, 10px);
   width: 100%;
    justify-items: center;
   align-items: center;
@@ -201,12 +209,18 @@ hr {
  background-color: #b18431 ;
 }
 
+a {
+  color: #c7b0a9;
+   font-size: clamp(7px, 1vw, 13px);
+}
+
+
 footer {
   margin: bottom-space;
   border-top: 1px solid #698474;
   padding: 10px 0 0 0;
   text-align: center;
-   font-size: clamp(10px, 2vw, 13px);
+   font-size: clamp(7px, 1vw, 13px);
   color: #a4a3a891;
 }
 
