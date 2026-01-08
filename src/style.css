@@ -138,7 +138,10 @@ h2 {
 }
 .celsius {
  font-size: clamp(14px, 3vw, 20px);
-  color: #dabd88;
+  color: #dabd88; 
+  position: relative;
+  font-size: 16px;
+  top: -20px;
 }
 
 
